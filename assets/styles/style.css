@@ -7,11 +7,21 @@
     --fonte-principal: 'Inter';
 }
 
+*{
+    margin: 0;
+}
+
 body{
+    height: 100%;
+    margin: 0;
     box-sizing: border-box;
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 500px;
+}
+
+main{
+    height: 100%;
 }
 
 /* HEADER */
@@ -72,16 +82,15 @@ nav > ul > li{
 
 /* SOBRE */
 .container-sobre{
-    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
     margin: 150px 0;
 }
 
 .sobrenos{
+    font-weight: 600;
     color: var(--vermelho-principal);
 }
 
@@ -124,17 +133,12 @@ nav > ul > li{
 }
 
 /* VAGAS */
-
 .vagas{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-top: 150px;
-    margin-bottom: 150px; */
-    /* margin: 150px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
+    margin: 150px 0; 
 }
 
 .sobre-vagas{
@@ -149,16 +153,79 @@ nav > ul > li{
     font-size: 36px;
     font-weight: 600;
     color: var(--preto-principal);
-    /* margin: 30px 0; */
+    margin: 30px 0;
 }
 .sobre-vagas > p{
     font-size: 20px;
     font-weight: 400;
     color: var(--cinza-claro);   
-    /* margin-bottom: 60px; */
+    margin-bottom: 60px;
 }
 
 .sobre-vagas > img{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* VAGAS TIPO */
+.vagas-tipo{
+    width: 50%;
+}
+
+.vagas-tipo > h2{
+    margin-top: 60px;
+}
+.detalhes-vagas{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "tempo salario"
+    ;
+    justify-content: start;
+    gap: 20px;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+    padding: 24px 24px 28px 24px;
+    margin: 20px 0;
+}
+
+.detalhes-vagas > h3{
+    grid-area: titulo;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.vaga-tempo{
+    grid-area: tempo;
+    color: var(--cinza-claro);
+}
+
+.vaga-salario{
+    grid-area: salario;
+}
+
+/* COLABORADORES */
+.colaboradores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 92, 92);
+    border-radius: 16px;
+    width: 80%;
+    height: 200%;
+    margin: 150px auto;
+}
+.colaboradores > h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--vermelho-principal);
+}
+.colaboradores > h2{
+    font-size: 36px;
+    margin: 30px 0;
+}
+
+.colaboradores > h4{
+    margin: 15px 0;
 }
