@@ -2,7 +2,7 @@
     --branco-principal: #FFFFFF;
     --cinza-principal: #3A404E;
     --cinza-claro: #667085;
-    --vermelho-principal: #8E2424; 
+    --vermelho-principal: #8E2424;
     --preto-principal: #101828;
     --fonte-principal: 'Inter';
 }
@@ -137,7 +137,7 @@ nav > ul > li{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 150px 0; 
+    margin: 150px 0;
 }
 
 .sobre-vagas{
@@ -157,7 +157,7 @@ nav > ul > li{
 .sobre-vagas > p{
     font-size: 20px;
     font-weight: 400;
-    color: var(--cinza-claro);   
+    color: var(--cinza-claro);
     margin-bottom: 60px;
 }
 
@@ -176,7 +176,7 @@ nav > ul > li{
 }
 .detalhes-vagas{
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "titulo titulo"
     "tempo salario"
     ;
@@ -227,4 +227,69 @@ nav > ul > li{
 
 .colaboradores > h4{
     margin: 15px 0;
+}
+
+/* FOOTER */
+footer{
+    background-color: #c4191908;
+    height: 40%;
+    display: grid;
+    gap: 25px;
+    justify-content: center;
+    align-content: center; 
+    grid-template-areas: 
+    "titulo-f titulo-f titulo-f"
+    "subtitulo subtitulo subtitulo"
+    "campo-f campo-f botao"
+    "direitos direitos direitos" 
+    ;
+}
+
+footer > h2{
+    grid-area: titulo-f;
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--preto-principal);
+}
+
+footer > h3{
+    grid-area: subtitulo;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza-claro);
+}
+
+.campo{
+    grid-area: campo-f;
+    border: 2px solid #EAECF0;
+    border-radius: 10px;
+    width: 88%;
+    height: 170%;
+    justify-self: end;
+}
+
+.botao-cadastar2{
+    grid-area: botao;
+    background-color: var(--vermelho-principal);
+    color: var(--branco-principal);
+    border-radius: 8px;
+    border-color: var(--vermelho-principal);
+    outline:none;
+    border: 0 none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 60%;
+    height: 190%;
+}
+
+::placeholder {
+    font-weight: 400;
+    color: var(--cinza-claro);
+}
+
+footer > p{
+    text-align: center;
+    grid-area: direitos;
+    font-weight: 400;
+    color: #98A2B3;
+    margin-top: 25px;
 }
