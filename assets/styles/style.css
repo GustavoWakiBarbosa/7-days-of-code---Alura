@@ -12,7 +12,6 @@
 }
 
 body{
-    height: 100%;
     margin: 0;
     box-sizing: border-box;
     font-family: var(--fonte-principal);
@@ -21,7 +20,7 @@ body{
 }
 
 main{
-    height: 100%;
+    height: 100vh;
 }
 
 /* HEADER */
@@ -210,10 +209,10 @@ nav > ul > li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(243, 92, 92);
+    background-color: #c4191908;
     border-radius: 16px;
     width: 80%;
-    height: 200%;
+    height: 40%;
     margin: 150px auto;
 }
 .colaboradores > h3{
